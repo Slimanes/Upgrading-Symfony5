@@ -2,13 +2,16 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "php": "^7.1.3",
+        "php": "^7.2.5",
         "ext-iconv": "*",
         "aws/aws-sdk-php": "^3.87",
         "composer/package-versions-deprecated": "^1.11",
+        "doctrine/doctrine-bundle": "^2.0",
+        "doctrine/doctrine-migrations-bundle": "^2.0",
+        "doctrine/orm": "^2.7",
         "easycorp/easy-log-handler": "^1.0",
         "knplabs/knp-markdown-bundle": "^1.7",
-        "knplabs/knp-paginator-bundle": "^2.7",
+        "knplabs/knp-paginator-bundle": "^5.0",
         "knplabs/knp-snappy-bundle": "^1.6",
         "knplabs/knp-time-bundle": "^1.8",
         "league/flysystem-aws-s3-v3": "^1.0",
@@ -29,14 +32,13 @@
         "symfony/mailer": "4.4.*",
         "symfony/messenger": "4.4.*",
         "symfony/monolog-bundle": "^3.6",
-        "symfony/orm-pack": "^1.0",
         "symfony/security-bundle": "4.4.*",
         "symfony/sendgrid-mailer": "4.4.*",
         "symfony/serializer-pack": "^1.0",
         "symfony/twig-bundle": "4.4.*",
         "symfony/twig-pack": "^1.0",
         "symfony/validator": "4.4.*",
-        "symfony/web-server-bundle": "^4.0",
+        "symfony/web-server-bundle": "4.4.*",
         "symfony/webpack-encore-bundle": "^1.4",
         "symfony/yaml": "4.4.*",
         "twig/cssinliner-extra": "^2.12",
@@ -58,7 +60,9 @@
             "*": "dist"
         },
         "sort-packages": true,
-        "platform": {}
+        "platform": {
+            "php": "7.2.5"
+        }
     },
     "autoload": {
         "psr-4": {

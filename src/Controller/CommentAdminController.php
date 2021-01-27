@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 /**
  * @IsGranted("ROLE_ADMIN_COMMENT")
  */
-class CommentAdminController extends Controller
+class CommentAdminController extends BaseController
 {
     /**
      * @Route("/admin/comment", name="comment_admin")
