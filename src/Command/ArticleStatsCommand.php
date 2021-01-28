@@ -46,5 +46,6 @@ class ArticleStatsCommand extends Command
             default:
                 throw new \Exception('What kind of crazy format is that!?');
         }
+        return 0;
     }
 }
